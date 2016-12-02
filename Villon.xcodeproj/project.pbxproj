@@ -10,8 +10,8 @@
 		360E23B21DF17E62003E9920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E23B11DF17E62003E9920 /* AppDelegate.swift */; };
 		360E23B41DF17E62003E9920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E23B31DF17E62003E9920 /* ViewController.swift */; };
 		360E23B71DF17E62003E9920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360E23B51DF17E62003E9920 /* Main.storyboard */; };
-		360E23B91DF17E62003E9920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360E23B81DF17E62003E9920 /* Assets.xcassets */; };
 		360E23BC1DF17E62003E9920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360E23BA1DF17E62003E9920 /* LaunchScreen.storyboard */; };
+		360E23DE1DF18397003E9920 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360E23DD1DF18397003E9920 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +19,9 @@
 		360E23B11DF17E62003E9920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		360E23B31DF17E62003E9920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		360E23B61DF17E62003E9920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		360E23B81DF17E62003E9920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360E23BB1DF17E62003E9920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		360E23BD1DF17E62003E9920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360E23DD1DF18397003E9920 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +54,10 @@
 		360E23B01DF17E62003E9920 /* Villon */ = {
 			isa = PBXGroup;
 			children = (
+				360E23DD1DF18397003E9920 /* Images.xcassets */,
 				360E23B11DF17E62003E9920 /* AppDelegate.swift */,
 				360E23B31DF17E62003E9920 /* ViewController.swift */,
 				360E23B51DF17E62003E9920 /* Main.storyboard */,
-				360E23B81DF17E62003E9920 /* Assets.xcassets */,
 				360E23BA1DF17E62003E9920 /* LaunchScreen.storyboard */,
 				360E23BD1DF17E62003E9920 /* Info.plist */,
 			);
@@ -124,8 +124,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E23DE1DF18397003E9920 /* Images.xcassets in Resources */,
 				360E23BC1DF17E62003E9920 /* LaunchScreen.storyboard in Resources */,
-				360E23B91DF17E62003E9920 /* Assets.xcassets in Resources */,
 				360E23B71DF17E62003E9920 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +261,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2356REJM5W;
 				INFOPLIST_FILE = Villon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmjiuidian.themehotels.Villon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2356REJM5W;
 				INFOPLIST_FILE = Villon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zmjiuidian.themehotels.Villon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
