@@ -7,40 +7,43 @@
 //
 
 import UIKit
+import Alamofire
 
-struct Fahrenheit {
+class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+
+    var tableView: UITableView!
     
-}
-
-class HomeViewController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createTestButton()
+        
+        self.createTableView()
+    }
+    
+    
+    private func createTableView(){
+        
+        let tableView = UITableView(frame: self.view.bounds)
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        
+        self.view.addSubview(tableView)
         
     }
     
     
-    private func createTestButton() {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CELL")
         
-        
-        let btn = UIButton(type: UIButtonType.custom)
-        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
-        btn.setTitle("test", for: UIControlState.normal)
-        btn.backgroundColor = UIColor.orange
-        btn.addTarget(self, action: #selector(btnClick(sender:)), for: UIControlEvents.touchUpInside)
-        
-        self.view.addSubview(btn)
+        return cell!
         
     }
-    
-    @objc func btnClick(sender:UIButton){
-        
-        let testVC :TestViewController = TestViewController()
-        
-        self.navigationController?.pushViewController(testVC, animated: true);
-        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 10.0
     }
     
 }
